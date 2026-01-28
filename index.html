@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Tutorials | Jaipur's Leading Coaching Center</title>
+    <style>
+        :root { --primary: #0d47a1; --secondary: #ffc107; --dark: #212121; --light: #f9f9f9; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--dark); scroll-behavior: smooth; }
+        
+        /* Navigation */
+        header { background: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-weight: bold; font-size: 1.5rem; color: var(--primary); }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--dark); font-weight: 500; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(13, 71, 161, 0.8), rgba(13, 71, 161, 0.8)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1350&q=80'); 
+                height: 500px; background-size: cover; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        
+        /* Sections */
+        .container { padding: 60px 10%; }
+        h2 { text-align: center; color: var(--primary); margin-bottom: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        
+        /* Cards */
+        .card { background: var(--light); padding: 30px; border-radius: 12px; border-bottom: 4px solid var(--secondary); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+        /* Map & Contact */
+        .contact-flex { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 30px; }
+        .map-box { flex: 1; min-width: 300px; height: 450px; border-radius: 12px; overflow: hidden; }
+        .form-box { flex: 1; min-width: 300px; background: #fff; padding: 25px; border: 1px solid #ddd; border-radius: 12px; }
+        
+        input, select, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 6px; }
+        .btn { background: var(--primary); color: white; border: none; padding: 15px 30px; cursor: pointer; width: 100%; font-size: 1rem; font-weight: bold; border-radius: 6px; }
+        
+        footer { background: var(--dark); color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Σ SIGMA TUTORIALS</div>
+    <nav>
+        <a href="#courses">Courses</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Find Us</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Igniting Success from Class 1 to 12</h1>
+    <p>Premium Coaching for Science, Commerce, and Arts in Jaipur</p>
+    <a href="#contact" style="background:var(--secondary); color:var(--dark); padding:12px 25px; text-decoration:none; border-radius:5px; margin-top:15px; font-weight:bold;">Enroll Today</a>
+</section>
+
+<section id="courses" class="container">
+    <h2>Our Academic Programs</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Classes 1 - 10</h3>
+            <p><strong>All Subjects:</strong> We build concepts in Math, Science, and Social Studies to ensure board-readiness.</p>
+        </div>
+        <div class="card">
+            <h3>Classes 11 - 12 (Science)</h3>
+            <p><strong>Subjects:</strong> Physics, Chemistry, and Biology. Expert guidance for medical and engineering foundations.</p>
+        </div>
+        <div class="card">
+            <h3>Classes 11 - 12 (Commerce)</h3>
+            <p><strong>Subjects:</strong> Accounting, Economics, Business Studies, and English.</p>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="container" style="background:#f0f4f8;">
+    <h2>Why Sigma Tutorials?</h2>
+    <div class="grid">
+        <div class="card" style="background:white">✨ Weekly Test Series</div>
+        <div class="card" style="background:white">📚 Printed Study Material</div>
+        <div class="card" style="background:white">👨‍🏫 One-on-One Doubt Sessions</div>
+        <div class="card" style="background:white">📈 Regular Parent-Teacher Meetings</div>
+    </div>
+</section>
+
+<section id="contact" class="container">
+    <h2>Visit Us & Send a Query</h2>
+    <div class="contact-flex">
+        <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.123456789!2d75.7323507!3d26.9203089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU1JzEzLjEiTiA3NcKwNDMnNTYuNSJF!5e0!3m2!1sen!2sin!4v1715800000000!5m2!1sen!2sin" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="form-box">
+            <h3>Student Query Box</h3>
+            <form>
+                <input type="text" placeholder="Student Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Class</option>
+                    <option>Class 1-10 (All Subjects)</option>
+                    <option>Class 11-12 (Science)</option>
+                    <option>Class 11-12 (Commerce)</option>
+                </select>
+                <textarea rows="4" placeholder="Mention subjects or queries here..."></textarea>
+                <button type="submit" class="btn">Submit Inquiry</button>
+            </form>
+            <p style="margin-top:15px; font-size:0.9rem;">📍 111 Shyam Path, Rajendra Nagar, Sirsi Road, Jaipur</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Sigma Tutorials. Excellence in Education.</p>
+</footer>
+
+</body>
+</html>
