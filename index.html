@@ -92,17 +92,18 @@
 
         <div class="form-box">
             <h3>Student Query Box</h3>
-            <form>
-                <input type="text" placeholder="Student Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <select required>
-                    <option value="">Select Class</option>
-                    <option>Class 1-10 (All Subjects)</option>
-                    <option>Class 11-12 (Science)</option>
-                    <option>Class 11-12 (Commerce)</option>
-                </select>
-                <textarea rows="4" placeholder="Mention subjects or queries here..."></textarea>
-                <button type="submit" class="btn">Submit Inquiry</button>
+            <form action="https://formspree.io/f/xrekgbdo" method="POST">
+                <input type="text" name="name" placeholder="Student Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <select name="class" required>
+            <option value="">Select Class</option>
+            <option>Class 1-10</option>
+            <option>Class 11-12 Science</option>
+            <option>Class 11-12 Commerce</option>
+        </select>
+        <textarea name="message" placeholder="How can we help you?"></textarea>
+        
+        <button type="submit" class="btn">Submit</button>
             </form>
             <p style="margin-top:15px; font-size:0.9rem;">📍 111 Shyam Path, Rajendra Nagar, Sirsi Road, Jaipur</p>
         </div>
@@ -114,4 +115,5 @@
 </footer>
 
 </body>
+
 </html>
